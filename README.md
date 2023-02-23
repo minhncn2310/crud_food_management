@@ -3,4 +3,5 @@
 *Can create/update/delete/add items<br>
 *There will be a backlog of bugs that can't be tested<br>
 #Feel free to download<br>
-Make by minhncn2310
+###Connect me via nguyenchanhnhatminh@gmail.com
+####Copyright &#169;2023
