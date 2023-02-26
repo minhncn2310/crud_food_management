@@ -12,6 +12,7 @@ namespace Repository.Services
         public void Create(Product product);
         public void Update(Product product);
         public void Delete(Product product);
+
         public List<Product> GetAll();
 
     }
@@ -48,6 +49,8 @@ namespace Repository.Services
                 .Where(p => isGuid && p.ProductId.Equals(productId)
                             || !isGuid && (p.ProductName.Contains(keyword)
                                            || p.Price.ToString().Contains(keyword)))
+                                              
+                .Where (p=>p.Status == true)
                 .ToList();
         }
 
