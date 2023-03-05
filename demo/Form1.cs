@@ -147,14 +147,14 @@ namespace demo
                             .Where(p => p.Status == true);
                         MessageBox.Show("Delete Sucessful");
                         btnShowAll.PerformClick();
-                    }
-                    if (dg == DialogResult.Cancel)
+                    } else if (dg == DialogResult.Cancel)
                     {
                         MessageBox.Show("There are no products to delete");
                     }
                     productService.Update(product[0]);
                 }
-            }   catch(Exception ex)
+            }   
+            catch(Exception ex)
             {
                 MessageBox.Show("Cannot Delete, check again product");
             }    
@@ -172,7 +172,8 @@ namespace demo
                 dgvProductList.DataSource = product;
                 MessageBox.Show("Search Sucessful");
                 
-            } catch(Exception ex )
+            } 
+            catch(Exception ex )
             {
                 MessageBox.Show("Maybe do not have product you need");
             }
